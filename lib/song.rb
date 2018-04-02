@@ -39,7 +39,7 @@ class Song
   end
 
   def self.new_from_filename(name)
-    match_data = /(.*) - (.*).mp3/.match name
+    match_data = /(?<artist>.*) - (?<song>.*).mp3/.match name
     
     artist_name = match_data[1]
     song_name = match_data[2]
