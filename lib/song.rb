@@ -17,12 +17,13 @@ class Song
     new.tap { |it| it.save }
   end
 
+  #def self.new
   def initialize(name)
     @name = name
   end
 
   def self.new_by_name(name)
-
+    new =
   end
 
   def self.create_by_name(name)
@@ -30,11 +31,11 @@ class Song
   end
 
   def self.find_by_name(name)
-    
+
   end
-  
+
   def self.find_or_create_by_name(name)
-    
+
   end
 
   def self.alphabetical
@@ -42,11 +43,11 @@ class Song
   end
 
   def self.new_from_filename
-    
+
   end
 
   def self.create_by_filename
-    
+
   end
 
   def self.destroy_all
