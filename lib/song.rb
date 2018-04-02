@@ -40,11 +40,8 @@ class Song
 
   def self.new_from_filename(name)
     match_data = /(?<artist>.*) - (?<song>.*).mp3/.match name
-    
-    artist_name = match_data[1]
-    song_name = match_data[2]
 
-    new(song_name, artist_name)
+    new(match_data[:song], match_data[:artist])
   end
 
   def self.create_by_filename
