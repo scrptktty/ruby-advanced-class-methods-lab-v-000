@@ -39,6 +39,7 @@ class Song
   end
 
   def self.new_from_filename(name)
+    binding.pry
     name /\w+\W/
   end
 
