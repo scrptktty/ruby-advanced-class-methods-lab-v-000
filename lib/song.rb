@@ -40,7 +40,10 @@ class Song
 
   def self.new_from_filename(name)
     binding.pry
-    /(.*) - (.*).mp3/.match name
+    match_data = /(.*) - (.*).mp3/.match name
+    artist_name = match_data[1]
+    song_name = match_data[2]
+
   end
 
   def self.create_by_filename
