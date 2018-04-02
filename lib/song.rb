@@ -16,8 +16,6 @@ class Song
   end
 
   #def self.new
-
-
   def self.new_by_name(name)
     new(name)
   end
@@ -45,7 +43,8 @@ class Song
   end
 
   def self.create_by_filename(name)
-
+    binding
+    self.new_from_filename(name).save
   end
 
   def self.destroy_all
