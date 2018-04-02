@@ -40,7 +40,6 @@ class Song
 
   def self.new_from_filename(name)
     match_data = /(?<artist>.*) - (?<song>.*).mp3/.match name
-
     new(match_data[:song], match_data[:artist])
   end
 
