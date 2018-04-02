@@ -43,7 +43,6 @@ class Song
     match_data = /(.*) - (.*).mp3/.match name
     artist_name = match_data[1]
     song_name = match_data[2]
-
   end
 
   def self.create_by_filename
@@ -54,8 +53,9 @@ class Song
     all.clear
   end
 
-  def initialize(name = "Song not found")
+  def initialize(name = "Song not found", artist_name = "trailer swift")
     @name = name
+    @artist_name = artist_name
   end
 
   def name
