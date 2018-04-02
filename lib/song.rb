@@ -26,8 +26,8 @@ class Song
     new(name).tap { |it| it.save }
   end
 
-  def self.find_by_name(name)
-    self.all.detect { |song| song.name == name }
+  def self.find_by_name(find_name)
+    self.all.detect { |song| song.name == find_name }
   end
 
   def self.find_or_create_by_name(name)
