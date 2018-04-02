@@ -43,10 +43,10 @@ class Song
   end
 
   def self.create_from_filename(name)
-    name = new_from_filename(name).name
+    song_name = new_from_filename(name).name
     binding.pry
-    artist_name = new_from_filename(name).artist_name
-    new(name, artist_name)
+    art_name = new_from_filename(name).artist_name
+    new(song_name, art_name)
   end
 
   def self.destroy_all
