@@ -43,7 +43,8 @@ class Song
   end
 
   def self.create_by_filename(name)
-    self.new_from_filename(name).new
+    new_song = self.new_from_filename(name)
+    new_song.new
   end
 
   def self.destroy_all
