@@ -21,15 +21,18 @@ class Song
     @name = name
   end
 
-  def new_by_name(name)
+  def self.new_by_name(name)
 
   end
 
-  def create_by_name(name)
+  def self.create_by_name(name)
 
   end
 
-  def find_or_create_by_name(name)
+  def self.find_by_name(name)
+  end
+  
+  def self.find_or_create_by_name(name)
   end
 
   def alphabetical
