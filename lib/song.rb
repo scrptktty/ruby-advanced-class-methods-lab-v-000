@@ -9,10 +9,6 @@ class Song
     @@all
   end
 
-  def save
-    self.class.all << self
-  end
-
   def self.create
     # Yields the new instance to the block, and then returns new instance as well.
     #self.new.tap --> barewords fall through to methods
@@ -32,7 +28,7 @@ class Song
 
   def self.find_by_name(name)
     binding.pry
-    # self.all.detect { |song| song == name }
+    self.all.detect { |song| song.name == name }
   end
 
   def self.find_or_create_by_name(name)
@@ -63,4 +59,7 @@ class Song
     @name
   end
 
+  def save
+    self.class.all << self
+  end
 end
