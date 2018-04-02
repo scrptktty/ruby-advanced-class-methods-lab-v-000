@@ -40,6 +40,8 @@ class Song
 
   def self.new_from_filename(name)
     file_name = name.scan /\w+\W/
+    file_name.join(" ")
+    
   end
 
   def self.create_by_filename
