@@ -40,7 +40,7 @@ class Song
 
   def self.new_from_filename(name)
     binding.pry
-    name /\w+\W/
+    name.scan /\w+\W/
   end
 
   def self.create_by_filename
