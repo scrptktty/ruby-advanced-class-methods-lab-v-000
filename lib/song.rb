@@ -45,6 +45,7 @@ class Song
   def self.create_from_filename(name)
     name = new_from_filename(name).name
     artist_name = new_from_filename(name).artist_name
+    new(name, artist_name)
   end
 
   def self.destroy_all
