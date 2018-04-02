@@ -31,8 +31,6 @@ class Song
   end
 
   def self.find_by_name(name)
-    #iterate find method?
-    binding.pry
     self.all.detect { |w| w == name }
   end
 
@@ -58,6 +56,10 @@ class Song
 
   def initialize(name = "Song not found")
     @name = name
+  end
+
+  def name
+    @name
   end
 
 end
