@@ -35,7 +35,7 @@ class Song
   end
 
   def self.alphabetical
-    self.all.tap { |it| it.sort }
+    all.name.tap { |it| it.sort }
   end
 
   def self.new_from_filename
