@@ -20,9 +20,7 @@ class Song
   end
 
   #def self.new
-  def initialize(name = "Song not found")
-    @name = name
-  end
+
 
   def self.new_by_name(name)
     new(name)
@@ -56,6 +54,10 @@ class Song
 
   def self.destroy_all
     all.clear
+  end
+
+  def initialize(name = "Song not found")
+    @name = name
   end
 
 end
