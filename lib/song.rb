@@ -17,6 +17,10 @@ class Song
     new.tap { |it| it.save }
   end
 
+  def initialize(name)
+    @name = name
+  end
+
   def new_by_name(name)
     
   end
