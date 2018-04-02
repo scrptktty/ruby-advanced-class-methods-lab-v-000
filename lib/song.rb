@@ -18,7 +18,7 @@ class Song
   end
 
   #def self.new
-  def initialize(name)
+  def initialize(name = "Song not found")
     @name = name
   end
 
@@ -27,7 +27,7 @@ class Song
   end
 
   def self.create_by_name(name)
-    
+
   end
 
   def self.find_by_name(name)
