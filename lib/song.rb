@@ -41,7 +41,7 @@ class Song
   def self.new_from_filename(name)
     file_name = name.scan /\w+\W/
     file_name.join(" ")
-    file_name.split.first
+    artist_name = file_name.split.first
   end
 
   def self.create_by_filename
