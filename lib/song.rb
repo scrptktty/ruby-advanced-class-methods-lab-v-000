@@ -39,6 +39,7 @@ class Song
   end
 
   def self.new_from_filename(name)
+    binding.pry
     /(.*) - (.*).mp3/.match name
   end
 
