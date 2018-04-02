@@ -44,7 +44,6 @@ class Song
 
   def self.create_from_filename(name)
     song_name = new_from_filename(name).name
-    binding.pry
     art_name = new_from_filename(name).artist_name
     new(song_name, art_name)
   end
