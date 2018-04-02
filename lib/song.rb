@@ -39,8 +39,9 @@ class Song
   end
 
   def self.new_from_filename(name)
-    binding.pry
     match_data = /(.*) - (.*).mp3/.match name
+
+    new(match_data[2])
     artist_name = match_data[1]
     song_name = match_data[2]
   end
