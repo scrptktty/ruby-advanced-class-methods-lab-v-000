@@ -39,7 +39,7 @@ class Song
   end
 
   def self.new_from_filename(name)
-    name.scan /\w+\W/
+    file_name = name.scan /\w+\W/
   end
 
   def self.create_by_filename
