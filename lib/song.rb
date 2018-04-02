@@ -39,7 +39,7 @@ class Song
   end
 
   def self.new_from_filename(name)
-    /(.*) - (.*).mp3/.match(name)
+    /(.*) - (.*).mp3/.match name
   end
 
   def self.create_by_filename
